@@ -11,7 +11,8 @@
     <AssemblyName>Zoltu.WebApi.RouteConstraints</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>9fb80c40</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
     <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -128,18 +129,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Code.nuspec" />
-    <None Include="Properties\nuget.props" />
     <None Include="packages.config" />
+    <None Include="Properties\nuget.props" />
   </ItemGroup>
-  <Import Project="$(ProjectDir)Properties\nuget.props"/>
+  <Import Project="$(ProjectDir)Properties\nuget.props" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="..\packages\Zoltu.Versioning.1.2.14.0\build\Zoltu.Versioning.targets" Condition="Exists('..\packages\Zoltu.Versioning.1.2.14.0\build\Zoltu.Versioning.targets')" />
+  <Import Project="..\packages\NuGet.for.MSBuild.2.1.0\build\NuGet.for.MSBuild.targets" Condition="Exists('..\packages\NuGet.for.MSBuild.2.1.0\build\NuGet.for.MSBuild.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\Zoltu.Versioning.1.2.14.0\build\Zoltu.Versioning.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Zoltu.Versioning.1.2.14.0\build\Zoltu.Versioning.targets'))" />
-    <Error Condition="!Exists('..\packages\NuGet.for.MSBuild.1.4.3\build\NuGet.for.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NuGet.for.MSBuild.1.4.3\build\NuGet.for.MSBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\NuGet.for.MSBuild.2.1.0\build\NuGet.for.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NuGet.for.MSBuild.2.1.0\build\NuGet.for.MSBuild.targets'))" />
+    <Error Condition="!Exists('..\packages\Zoltu.Versioning.1.2.30.0\build\Zoltu.Versioning.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Zoltu.Versioning.1.2.30.0\build\Zoltu.Versioning.targets'))" />
   </Target>
-  <Import Project="..\packages\NuGet.for.MSBuild.1.4.3\build\NuGet.for.MSBuild.targets" Condition="Exists('..\packages\NuGet.for.MSBuild.1.4.3\build\NuGet.for.MSBuild.targets')" />
+  <Import Project="..\packages\Zoltu.Versioning.1.2.30.0\build\Zoltu.Versioning.targets" Condition="Exists('..\packages\Zoltu.Versioning.1.2.30.0\build\Zoltu.Versioning.targets')" />
 </Project>
