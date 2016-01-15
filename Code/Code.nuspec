@@ -6,6 +6,7 @@
 		<authors>$author$</authors>
 		<description>$description$</description>
 		<language>en-US</language>
+		<iconUrl>https://blob.zoltu.com/images/zoltu-icon-64x64.png</iconUrl>
 		<projectUrl>https://github.com/Zoltu/Zoltu.WebApi.RouteConstraints</projectUrl>
 		<licenseUrl>https://github.com/Zoltu/Zoltu.WebApi.RouteConstraints/blob/master/LICENSE</licenseUrl>
 		<tags></tags>
